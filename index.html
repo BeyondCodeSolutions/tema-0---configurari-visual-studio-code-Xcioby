@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 1 - Bogdan Ciobanu</title>
+  </head>
+  <body>
+    <h1>Planets</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan="2"></th>
+          <th>Name</th>
+          <th>Mass (10<sup>24</sup>kg)</th>
+          <th>Diameter (km)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="4" colspan="2">Terrestrial planets</th>
+          <th>Mercury</th>
+          <td>0.330</td>
+          <td>4,879</td>
+        </tr>
+        <tr>
+          <th>Venus</th>
+          <td>4.87</td>
+          <td>12,104</td>
+        </tr>
+        <tr>
+          <th>Earth</th>
+          <td>5.97</td>
+          <td>12,756</td>
+        </tr>
+        <tr>
+          <th>Mars</th>
+          <td>0.642</td>
+          <td>6,792</td>
+        </tr>
+        <tr>
+          <th rowspan="4">Jovian planets</th>
+          <th rowspan="2">Gas giants</th>
+          <th>Jupiter</th>
+          <td>1898</td>
+          <td>142,984</td>
+        </tr>
+        <tr>
+          <th>Saturn</th>
+          <td>568</td>
+          <td>120,536</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Ice giants</th>
+          <th>Uranus</th>
+          <td>86.8</td>
+          <td>51,118</td>
+        </tr>
+        <tr>
+          <th>Neptune</th>
+          <td>102</td>
+          <td>49,528</td>
+        </tr>
+        <tr>
+          <th colspan="2">Dwarf planets</th>
+          <th>Pluto</th>
+          <td>0.0146</td>
+          <td>2,370</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Ask us about planets</legend>
+        <p>
+          <label for="fullname">Full Name:</label>
+          <input type="text" name="name" id="fullname" required />
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+        </p>
+        <p>
+          Favourite planet:<br />
+          <label
+            ><input type="radio" name="Plan" value="Mercury" />Mercury</label
+          ><br />
+          <label><input type="radio" name="Plan" value="Venus" />Venus</label
+          ><br />
+          <label
+            ><input
+              type="radio"
+              name="Plan"
+              value="Earth"
+              checked
+            />Earth</label
+          ><br />
+          <label><input type="radio" name="Plan" value="Mars" />Mars</label
+          ><br />
+          <label
+            ><input type="radio" name="Plan" value="Jupiter" />Jupiter</label
+          ><br />
+          <label><input type="radio" name="Plan" value="Saturn" />Saturn</label
+          ><br />
+          <label><input type="radio" name="Plan" value="Uranus" />Uranus</label
+          ><br />
+          <label
+            ><input type="radio" name="Plan" value="Neptune" />Neptune</label
+          ><br />
+          <label><input type="radio" name="Plan" value="Pluto" />Pluto</label
+          ><br />
+        </p>
+
+        <p>
+          <label
+            ><input type="checkbox" name="agree" value="on" required />
+            I agree to the
+            <a href="http://www.google.ro" target="blank"
+              >terms and conditions</a
+            ></label
+          >
+        </p>
+        <button type="reset" name="resetBtn" border-radius="14">Reset</button>
+        <button type="submit">Ask away</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
